@@ -1,0 +1,17 @@
+[project]
+name = "distributed-computing"
+version = "0.1.0"
+description = "Educational distributed-systems toolkit in pure Python: Lamport clocks, leader election, distributed mutex, 2PC, deadlock detection."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
